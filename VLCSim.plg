@@ -1,0 +1,172 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: VLCSim - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0xc09 /fo"Debug/VLCSim.res" /d "_DEBUG" /d "_AFXDLL" "C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\VLCSim.rc"" 
+Creating temporary file "C:\Users\tkrieg\AppData\Local\Temp\RSP7F64.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\coms_options.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\custom_dlg.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\dlg_comms_errors.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\dlg_configuration.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\dlg_control.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\dlg_datetime_memsig.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\dlg_events.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\dlg_exceptions.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\dlg_main.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\dlg_monitor.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\dlg_transactions.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\game_play_dlg.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\program_options_dlg.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\sdb_dlg.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\game_play.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\xseries_packet.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\xseries_transmit_thread.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\XEdit.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\XHeaderCtrl.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\XListCtrl.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\colour_list_box.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\cputicker.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\date_time.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\edit_cell.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\edit_hex.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\enumser.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\list_ctrl.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\mscommctrl.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\notify.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\random.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\timers.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\utilities.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\VLCSim.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\receive_thread.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\ThreadTest.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\vlc_comms_output.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\vlc_exceptions.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\vlc_id.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\vlc_id_list.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\vlc_packet.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\vlc_receive_thread.cpp"
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\vlc_transmit.cpp"
+]
+Creating command line "cl.exe @C:\Users\tkrieg\AppData\Local\Temp\RSP7F64.tmp" 
+Creating temporary file "C:\Users\tkrieg\AppData\Local\Temp\RSP7F65.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/VLCSim.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Development\Comms Protocols\VLC Sim\VLC sim latest\VLCSim V1.0\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\tkrieg\AppData\Local\Temp\RSP7F65.tmp" 
+Creating temporary file "C:\Users\tkrieg\AppData\Local\Temp\RSP7F66.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/VLCSim.pdb" /debug /machine:I386 /out:"Debug/VLCSim.exe" /pdbtype:sept 
+".\Debug\coms_options.obj"
+".\Debug\custom_dlg.obj"
+".\Debug\dlg_comms_errors.obj"
+".\Debug\dlg_configuration.obj"
+".\Debug\dlg_control.obj"
+".\Debug\dlg_datetime_memsig.obj"
+".\Debug\dlg_events.obj"
+".\Debug\dlg_exceptions.obj"
+".\Debug\dlg_main.obj"
+".\Debug\dlg_monitor.obj"
+".\Debug\dlg_transactions.obj"
+".\Debug\game_play_dlg.obj"
+".\Debug\program_options_dlg.obj"
+".\Debug\sdb_dlg.obj"
+".\Debug\game_play.obj"
+".\Debug\xseries_packet.obj"
+".\Debug\xseries_transmit_thread.obj"
+".\Debug\XEdit.obj"
+".\Debug\XHeaderCtrl.obj"
+".\Debug\XListCtrl.obj"
+".\Debug\colour_list_box.obj"
+".\Debug\cputicker.obj"
+".\Debug\date_time.obj"
+".\Debug\edit_cell.obj"
+".\Debug\edit_hex.obj"
+".\Debug\enumser.obj"
+".\Debug\list_ctrl.obj"
+".\Debug\mscommctrl.obj"
+".\Debug\notify.obj"
+".\Debug\random.obj"
+".\Debug\timers.obj"
+".\Debug\utilities.obj"
+".\Debug\StdAfx.obj"
+".\Debug\VLCSim.obj"
+".\Debug\receive_thread.obj"
+".\Debug\ThreadTest.obj"
+".\Debug\vlc_comms_output.obj"
+".\Debug\vlc_exceptions.obj"
+".\Debug\vlc_id.obj"
+".\Debug\vlc_id_list.obj"
+".\Debug\vlc_packet.obj"
+".\Debug\vlc_receive_thread.obj"
+".\Debug\vlc_transmit.obj"
+".\Debug\VLCSim.res"
+]
+Creating command line "link.exe @C:\Users\tkrieg\AppData\Local\Temp\RSP7F66.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+coms_options.cpp
+custom_dlg.cpp
+dlg_comms_errors.cpp
+dlg_configuration.cpp
+dlg_control.cpp
+dlg_datetime_memsig.cpp
+dlg_events.cpp
+dlg_exceptions.cpp
+dlg_main.cpp
+dlg_monitor.cpp
+dlg_transactions.cpp
+game_play_dlg.cpp
+program_options_dlg.cpp
+sdb_dlg.cpp
+game_play.cpp
+xseries_packet.cpp
+xseries_transmit_thread.cpp
+XEdit.cpp
+XHeaderCtrl.cpp
+XListCtrl.cpp
+Generating Code...
+Compiling...
+colour_list_box.cpp
+cputicker.cpp
+date_time.cpp
+edit_cell.cpp
+edit_hex.cpp
+enumser.cpp
+list_ctrl.cpp
+mscommctrl.cpp
+notify.cpp
+random.cpp
+timers.cpp
+utilities.cpp
+VLCSim.cpp
+receive_thread.cpp
+ThreadTest.cpp
+vlc_comms_output.cpp
+vlc_exceptions.cpp
+vlc_id.cpp
+vlc_id_list.cpp
+vlc_packet.cpp
+Generating Code...
+Compiling...
+vlc_receive_thread.cpp
+vlc_transmit.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+VLCSim.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

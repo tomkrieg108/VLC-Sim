@@ -1,0 +1,992 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About VLSSim"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "VLC Sim",IDC_STATIC,40,17,119,8,SS_NOPREFIX
+    LTEXT           "Copyright ©2008 Tom Krieg for GLI Australia",IDC_STATIC,
+                    40,29,119,19
+    DEFPUSHBUTTON   "OK",IDOK,178,21,50,15,BS_FLAT | WS_GROUP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "GLI Australia\0"
+            VALUE "FileDescription", "VLC Sim MFC Application\0"
+            VALUE "FileVersion", "1.0\0"
+            VALUE "InternalName", "VLC Sim\0"
+            VALUE "LegalCopyright", "Copyright (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "VLCSim.EXE\0"
+            VALUE "PrivateBuild", "1\0"
+            VALUE "ProductName", "VLC SA Comms Simulator\0"
+            VALUE "ProductVersion", "1.0\0"
+            VALUE "SpecialBuild", "1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About VLC Simulator"
+    IDS_APPTITLE            "VLC Simulator"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Australia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENA)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_AUS
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 630, 446
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "VLC Sim"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_COMPORTLIST,"SysListView32",LVS_SMALLICON | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | 
+                    LVS_NOCOLUMNHEADER | WS_TABSTOP,7,121,77,47,
+                    WS_EX_STATICEDGE
+    CONTROL         "&Connect",IDC_CONNECT,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,7,174,77,14
+    CONTROL         "Tree1",IDC_CHILDWINDOWTREE,"SysTreeView32",
+                    TVS_HASBUTTONS | TVS_HASLINES | TVS_SHOWSELALWAYS | 
+                    WS_TABSTOP,7,5,77,108,WS_EX_CLIENTEDGE
+    LTEXT           "Placeholder",IDC_PLACEHOLDER,93,16,370,189,NOT 
+                    WS_VISIBLE | WS_BORDER
+    PUSHBUTTON      "&Exit",IDOK,7,191,77,14,BS_FLAT
+    LTEXT           "Static",IDC_TITLE,407,401,35,12,NOT WS_VISIBLE | 
+                    WS_BORDER
+    CONTROL         "",IDC_MSCOMMCTRL,"{648A5600-2C6E-101B-82B6-000000000014}",
+                    WS_TABSTOP,363,416,25,23
+    EDITTEXT        IDC_SEF,393,417,44,12,ES_CENTER | ES_MULTILINE | 
+                    ES_READONLY | ES_WANTRETURN | NOT WS_BORDER
+    LTEXT           "debug",IDC_RECEIVE_DEBUG,389,431,42,8
+    LISTBOX         IDC_COMMS_WATCHER,7,217,458,175,LBS_OWNERDRAWVARIABLE | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_MSCOMM2,"{648A5600-2C6E-101B-82B6-000000000014}",
+                    WS_TABSTOP,334,416,25,23
+    LTEXT           "Active Id: Null",IDC_STATIC_ACTIVE_ID,483,363,65,8
+    CONTROL         "List1",IDC_XLISTCTRL_POLLING,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,476,220,148,111,WS_EX_STATICEDGE
+    PUSHBUTTON      "Add ID",IDC_BTN_ADD_ID,477,334,50,14,BS_FLAT
+    EDITTEXT        IDC_EDIT_ADD_ID,532,335,32,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set Next",IDC_BTN_DATA_SET_NEXT,485,26,50,14,BS_FLAT
+    GROUPBOX        "Next Send: Data",IDC_STATIC,476,13,67,87,BS_FLAT
+    PUSHBUTTON      "View Next",IDC_BTN_DATA_VIEW_NEXT,485,44,50,14,BS_FLAT
+    PUSHBUTTON      "View Default",IDC_BTN_DATA_VIEW_DEFAULT,485,62,50,14,
+                    BS_FLAT
+    GROUPBOX        "Next Send: Errors",IDC_STATIC,551,13,73,87,BS_FLAT
+    CONTROL         "Timing Errors",IDC_CHK_ERRORS_TIMING,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,561,25,57,10
+    CONTROL         "Data Errors",IDC_CHK_ERRORS_DATA,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,561,36,51,10
+    CONTROL         "Size Errors",IDC_CHK_ERRORS_SIZE,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,561,47,49,10
+    PUSHBUTTON      "Set",IDC_BTN_ERRORS_SET,563,60,50,14,BS_FLAT
+    GROUPBOX        "Next Received: Response",IDC_STATIC,476,105,148,30,
+                    BS_FLAT
+    COMBOBOX        IDC_COMBO_NEXT_RESPONSE,484,118,89,79,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Set",IDC_BTN_NEXT_RESPONSE_SET,579,117,37,14,BS_FLAT
+    LTEXT           "Static",IDC_STATIC_DATE,255,412,47,8
+    LTEXT           "Static",IDC_STATIC_TIME,255,422,48,8
+    GROUPBOX        "Comms Watcher Options",IDC_STATIC,7,400,226,39,BS_FLAT
+    CONTROL         "Pause",IDC_CHECK_PAUSE,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,14,411,36,10
+    CONTROL         "Active ID Only",IDC_CHECK_ACTIVE_ID_ONLY,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,64,411,61,10
+    CONTROL         "Description",IDC_CHECK_INCLUDE_DESCRIPTION,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,64,421,51,10
+    CONTROL         "Show Errors",IDC_CHECK_INCLUDE_ERRORS,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,131,410,54,10
+    CONTROL         "Log to File",IDC_CHECK_LOG,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,130,422,49,10
+    LTEXT           "",IDC_STATIC_STATUS,93,5,343,8
+    PUSHBUTTON      "Read Repy",IDC_BTN_DATA_VIEW_LAST_READ_REPLY,483,149,61,
+                    14,BS_FLAT
+    PUSHBUTTON      "Site Info Repy",IDC_BTN_DATA_VIEW_LAST_SITE_REPLY,557,
+                    149,61,14,BS_FLAT
+    PUSHBUTTON      "Write Request",IDC_BTN_DATA_VIEW_LAST_RECEIVED,484,184,
+                    61,14,BS_FLAT
+    CONTROL         "No Polls",IDC_CHECK_SHOW_POLLS,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,14,422,42,10
+    GROUPBOX        "View Last Sent",IDC_STATIC,475,137,149,32,BS_FLAT
+    PUSHBUTTON      "View",IDC_BTN_ERRORS_VIEW,563,79,50,14,BS_FLAT
+    GROUPBOX        "View Last Received",IDC_STATIC,475,173,149,32,BS_FLAT
+    GROUPBOX        "Date Time: Universal",IDC_STATIC,245,399,80,40,BS_FLAT
+    LTEXT           "Id List",IDC_STATIC,477,210,20,8
+    GROUPBOX        "",IDC_STATIC_ID_STATUS,477,354,147,85,BS_FLAT
+    LTEXT           "Mode:",IDC_STATIC_TERMINAL_MODE,483,374,68,8
+    CONTROL         "Polls",IDC_CHECK_SET_NOT_RESPONDING,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,485,402,31,10
+    LTEXT           "Set as non-responding:",IDC_STATIC,485,390,74,8
+    CONTROL         "Read Requests",IDC_CHECK_NON_RESPONDING_READ_REQ,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,485,414,65,10
+    CONTROL         "Write Requests",IDC_CHECK_NO_RESP_WRITE_REQ,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,553,401,65,10
+END
+
+IDD_SDB DIALOGEX 0, 0, 440, 233
+STYLE WS_CHILD | WS_BORDER
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "1",IDC_STATUS1_1,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,70,18,18,9
+    CONTROL         "2",IDC_STATUS2_1,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,88,18,18,9
+    CONTROL         "3",IDC_STATUS3_1,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,106,18,18,9
+    CONTROL         "4",IDC_STATUS4_1,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,124,18,18,9
+    CONTROL         "5",IDC_STATUS5_1,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,142,18,18,9
+    CONTROL         "6",IDC_STATUS6_1,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,160,18,18,9
+    CONTROL         "7",IDC_STATUS7_1,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,178,18,18,9
+    CONTROL         "8",IDC_STATUS8_1,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,196,18,18,9
+    CONTROL         "1",IDC_STATUS1_2,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,70,31,18,9
+    CONTROL         "2",IDC_STATUS2_2,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,88,31,18,9
+    CONTROL         "3",IDC_STATUS3_2,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,106,31,18,9
+    CONTROL         "4",IDC_STATUS4_2,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,124,31,18,9
+    CONTROL         "5",IDC_STATUS5_2,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,142,31,18,9
+    CONTROL         "6",IDC_STATUS6_2,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,160,31,18,9
+    CONTROL         "7",IDC_STATUS7_2,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,178,31,18,9
+    CONTROL         "8",IDC_STATUS8_2,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,196,31,18,9
+    CONTROL         "1",IDC_STATUS1_3,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,70,47,18,9
+    CONTROL         "2",IDC_STATUS2_3,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,88,47,18,9
+    CONTROL         "3",IDC_STATUS3_3,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,106,47,18,9
+    CONTROL         "4",IDC_STATUS4_3,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,124,47,18,9
+    CONTROL         "5",IDC_STATUS5_3,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,142,47,18,9
+    CONTROL         "6",IDC_STATUS6_3,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,160,47,18,9
+    CONTROL         "7",IDC_STATUS7_3,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,178,47,18,9
+    CONTROL         "8",IDC_STATUS8_3,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,196,47,18,9
+    CONTROL         "1",IDC_STATUS1_4,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,70,63,18,9
+    CONTROL         "2",IDC_STATUS2_4,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,88,63,18,9
+    CONTROL         "3",IDC_STATUS3_4,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,106,63,18,9
+    CONTROL         "4",IDC_STATUS4_4,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,124,63,18,9
+    CONTROL         "5",IDC_STATUS5_4,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,142,63,18,9
+    CONTROL         "6",IDC_STATUS6_4,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,160,63,18,9
+    CONTROL         "7",IDC_STATUS7_4,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,178,63,18,9
+    CONTROL         "8",IDC_STATUS8_4,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,196,63,18,9
+    CONTROL         "1",IDC_STATUS1_5,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,70,77,18,9
+    CONTROL         "2",IDC_STATUS2_5,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,88,77,18,9
+    CONTROL         "3",IDC_STATUS3_5,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,106,77,18,9
+    CONTROL         "4",IDC_STATUS4_5,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,124,77,18,9
+    CONTROL         "5",IDC_STATUS5_5,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,142,77,18,9
+    CONTROL         "6",IDC_STATUS6_5,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,160,77,18,9
+    CONTROL         "7",IDC_STATUS7_5,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,178,77,18,9
+    CONTROL         "8",IDC_STATUS8_5,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,196,77,18,9
+    CONTROL         "1",IDC_P1SEF,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,70,93,18,9
+    CONTROL         "2",IDC_P2SEF,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,88,93,18,9
+    CONTROL         "3",IDC_P3SEF,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,106,93,18,9
+    CONTROL         "4",IDC_P4SEF,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,124,93,18,9
+    CONTROL         "5",IDC_P5SEF,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,142,93,18,9
+    CONTROL         "6",IDC_P6SEF,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,160,93,18,9
+    EDITTEXT        IDC_GMID,58,147,30,12,ES_NUMBER | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_PGMID1,58,162,65,12,NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_PGMID2,58,177,65,12,NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_PGMID3,58,192,65,12,NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_PGMID4,58,208,65,12,NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_PRTPH,189,147,22,12,ES_RIGHT | ES_NUMBER | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_BCV,189,162,22,12,ES_RIGHT | ES_NUMBER | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_SDBVER,189,177,22,12,ES_RIGHT | ES_NUMBER | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_MGMID,189,192,22,12,ES_RIGHT | ES_NUMBER | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_TURNOVER,279,15,45,12,ES_RIGHT | ES_UPPERCASE | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_TOTALWINS,279,31,45,12,ES_RIGHT | ES_UPPERCASE | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_CASHBOX,279,47,45,12,ES_RIGHT | ES_UPPERCASE | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_CANCELLEDCR,279,63,45,12,ES_RIGHT | ES_UPPERCASE | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_MISCACC,279,79,45,12,ES_RIGHT | ES_UPPERCASE | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_MONEYIN,279,95,45,12,ES_RIGHT | ES_UPPERCASE | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_MONEYOUT,279,111,45,12,ES_RIGHT | ES_UPPERCASE | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_CASHIN,377,15,45,12,ES_RIGHT | ES_UPPERCASE | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_CASHOUT,377,31,45,12,ES_RIGHT | ES_UPPERCASE | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_CREDIT,377,47,45,12,ES_RIGHT | ES_UPPERCASE | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_PLAYED,384,63,38,12,ES_RIGHT | ES_UPPERCASE | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_POWERUP,384,79,38,12,ES_RIGHT | ES_UPPERCASE | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_GAMESPOWER,384,95,38,12,ES_RIGHT | ES_UPPERCASE | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_GAMESDOOR,384,111,38,12,ES_RIGHT | ES_UPPERCASE | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "Correct / Corrupt",IDC_BSCCORRECT,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,233,202,67,11
+    EDITTEXT        IDC_BSC,304,201,14,12,ES_RIGHT | ES_NUMBER | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "Correct / Corrupt",IDC_CHKSUMCORRECT,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,337,202,67,11
+    EDITTEXT        IDC_CHKSUM,405,201,15,12,NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Status Byte 1",IDC_STATIC,14,18,54,12,SS_CENTERIMAGE
+    LTEXT           "Status Byte 2",IDC_STATIC,14,31,54,12,SS_CENTERIMAGE
+    LTEXT           "Status Byte 3",IDC_STATIC,14,47,54,12,SS_CENTERIMAGE
+    LTEXT           "Status Byte 4",IDC_STATIC,14,63,54,12,SS_CENTERIMAGE
+    LTEXT           "Status Byte 5",IDC_STATIC,14,77,54,12,SS_CENTERIMAGE
+    LTEXT           "Port Status Byte",IDC_STATIC,14,90,54,12,SS_CENTERIMAGE
+    GROUPBOX        "Checksum",IDC_STATIC,331,191,95,27,BS_FLAT | WS_GROUP
+    GROUPBOX        "Block Sequence Counter",IDC_STATIC,229,191,95,27,
+                    BS_FLAT | WS_GROUP
+    LTEXT           "1:",IDC_STATIC,68,109,8,8
+    LTEXT           "2:",IDC_STATIC,92,109,8,8
+    LTEXT           "3:",IDC_STATIC,114,109,8,8
+    LTEXT           "4:",IDC_STATIC,138,109,8,8
+    LTEXT           "5:",IDC_STATIC,160,109,8,8
+    LTEXT           "SEF:",IDC_STATIC,184,109,15,8
+    EDITTEXT        IDC_STATUSDISPLAY1,78,109,11,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_STATUSDISPLAY2,100,109,11,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_STATUSDISPLAY3,124,109,11,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_STATUSDISPLAY4,146,109,11,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_STATUSDISPLAY5,170,109,11,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_STATUSDISPLAY6,200,109,11,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    GROUPBOX        "Status Bytes",IDC_STATIC,7,7,210,120,BS_FLAT
+    GROUPBOX        "Meters",IDC_STATIC,223,7,210,120,BS_FLAT
+    LTEXT           "Turnover",IDC_STATIC,229,15,43,12,SS_CENTERIMAGE
+    LTEXT           "Total Wins",IDC_STATIC,229,31,43,12,SS_CENTERIMAGE
+    LTEXT           "Cashbox",IDC_STATIC,229,47,43,12,SS_CENTERIMAGE
+    LTEXT           "Cancelled Cr.",IDC_STATIC,229,63,43,12,SS_CENTERIMAGE
+    LTEXT           "Games Played",IDC_STATIC,332,63,45,12,SS_CENTERIMAGE
+    LTEXT           "Money In",IDC_STATIC,229,95,43,12,SS_CENTERIMAGE
+    LTEXT           "Money Out",IDC_STATIC,229,111,43,12,SS_CENTERIMAGE
+    LTEXT           "Cash In",IDC_STATIC,332,15,38,12,SS_CENTERIMAGE
+    LTEXT           "Cash Out",IDC_STATIC,332,31,38,12,SS_CENTERIMAGE
+    LTEXT           "Credit Meter",IDC_STATIC,332,47,38,12,SS_CENTERIMAGE
+    LTEXT           "Misc Accrual",IDC_STATIC,229,79,43,12,SS_CENTERIMAGE
+    LTEXT           "Power Up",IDC_STATIC,332,79,45,12,SS_CENTERIMAGE
+    LTEXT           "Games-Power",IDC_STATIC,332,95,45,12,SS_CENTERIMAGE
+    LTEXT           "Games-Door",IDC_STATIC,332,111,45,12,SS_CENTERIMAGE
+    LTEXT           "Byte",IDC_STATIC,15,106,43,12,SS_CENTERIMAGE
+    GROUPBOX        "Counters and Checksums",IDC_STATIC,223,181,210,45,
+                    BS_FLAT
+    LTEXT           "Multi Game ID",IDC_STATIC,127,192,57,12,SS_CENTERIMAGE
+    LTEXT           "Base Credit Value",IDC_STATIC,127,162,57,12,
+                    SS_CENTERIMAGE
+    LTEXT           "Program ID 1",IDC_STATIC,12,162,44,12,SS_CENTERIMAGE
+    LTEXT           "Program ID 2",IDC_STATIC,12,177,44,12,SS_CENTERIMAGE
+    LTEXT           "Percentage Return To Player",IDC_STATIC,91,147,96,12,
+                    SS_CENTERIMAGE
+    LTEXT           "SDB Version",IDC_STATIC,127,177,57,12,SS_CENTERIMAGE
+    LTEXT           "GMID",IDC_STATIC,12,147,19,12,SS_CENTERIMAGE
+    GROUPBOX        "Game Config",IDC_STATIC,7,137,210,89,BS_FLAT
+    LTEXT           "Program ID 3",IDC_STATIC,12,192,44,12,SS_CENTERIMAGE
+    LTEXT           "Program ID 4",IDC_STATIC,12,208,44,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_SFS,189,208,22,12,ES_RIGHT | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "Secondary Funcs",IDC_STATIC,127,208,57,12,
+                    SS_CENTERIMAGE
+END
+
+IDD_EVENTS DIALOGEX 0, 0, 372, 191
+STYLE WS_CHILD | WS_BORDER
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_LISTCTRL_EVENT_DATA,"SysListView32",
+                    LVS_REPORT | WS_BORDER | WS_TABSTOP,14,18,185,96
+    CONTROL         "List2",IDC_LISTCTRL_EVENT_LOG,"SysListView32",
+                    LVS_REPORT | WS_BORDER | WS_TABSTOP,215,17,123,96
+    COMBOBOX        IDC_COMBO_EVENT_TYPES,15,147,98,101,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add Event",IDC_BTN_ADD,120,147,50,14,BS_FLAT
+    GROUPBOX        "Event Data",IDC_STATIC,7,7,201,177,BS_FLAT
+    GROUPBOX        "Event Log",IDC_STATIC,206,7,159,177,BS_FLAT
+    CONTROL         "Use Current Date/Time (as applicable)",
+                    IDC_CHK_USE_CURRENT_TIME,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,14,125,143,10
+    LTEXT           "End",IDC_STATIC_END_READ,223,140,46,8
+    LTEXT           "Start",IDC_STATIC_START_READ,223,131,49,8
+    PUSHBUTTON      "Set default",IDC_BTN_SET_DEFAULT,223,158,50,14,BS_FLAT
+    GROUPBOX        "Next Read",IDC_STATIC,216,119,131,58,BS_FLAT
+    LTEXT           "Records:",IDC_STATIC_RECORDS,285,126,47,8
+    LTEXT           "Packets:",IDC_STATIC_PACKETS,285,136,46,8
+    COMBOBOX        IDC_COMBO_APPLY_ERRORS_TO,285,159,48,64,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Errors For Pkt:",IDC_STATIC,285,149,46,8
+END
+
+IDD_CONTROL DIALOGEX 0, 0, 372, 191
+STYLE WS_CHILD | WS_BORDER
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_XLISTCTRL_CONTROL_PKT,"SysListView32",
+                    LVS_REPORT | WS_BORDER | WS_TABSTOP,7,7,192,142
+END
+
+IDD_CONFIGURATION DIALOGEX 0, 0, 372, 191
+STYLE WS_CHILD | WS_BORDER
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_XLISTCTRL_CONFIG_PACKET,"SysListView32",
+                    LVS_REPORT | WS_BORDER | WS_TABSTOP,7,7,192,159
+    CONTROL         "Mess with O bit",IDC_CHECK_O_BIT,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,210,155,64,10
+    CONTROL         "Nack 1st packet",IDC_CHECK_NACK_1ST_PKT,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,210,125,69,10
+    CONTROL         "Nack 2nd packet",IDC_CHECK_NACK_2ND_PKT,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,210,140,71,10
+END
+
+IDD_COMMSOPTIONS DIALOGEX 0, 0, 440, 233
+STYLE WS_CHILD | WS_BORDER
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Communication Options",IDC_STATIC,7,7,210,120,BS_FLAT
+END
+
+IDD_PROGRAMOPTIONS DIALOGEX 0, 0, 407, 216
+STYLE WS_CHILD | WS_BORDER
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Static Data",IDC_STATIC,5,7,171,120,BS_FLAT
+    GROUPBOX        "Progressives",IDC_STATIC,190,7,87,44,BS_FLAT
+    GROUPBOX        "PMDB Version",IDC_STATIC,190,57,87,70,BS_FLAT
+    GROUPBOX        "Port Setting",IDC_STATIC,286,7,112,44,BS_FLAT
+END
+
+IDD_MONITOR DIALOGEX 0, 0, 371, 190
+STYLE WS_CHILD | WS_BORDER
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_XLISTCTRL_MONITOR_PACKET,"SysListView32",
+                    LVS_REPORT | WS_BORDER | WS_TABSTOP,7,7,194,151
+    COMBOBOX        IDC_COMBO_CUR_DE,7,162,48,62,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Hopper In",IDC_BUTTON_HOPPER_IN,227,31,50,14,BS_FLAT
+    PUSHBUTTON      "Drop Box In",IDC_BUTTON_DROP_BOX_IN,227,47,50,14,
+                    BS_FLAT
+    PUSHBUTTON      "Hopper Out",IDC_BUTTON_HOPPER_OUT,227,63,50,14,BS_FLAT
+    PUSHBUTTON      "Manual Pay",IDC_BUTTON_MANUAL_PAY,227,79,50,14,BS_FLAT
+    PUSHBUTTON      "Collect Drop",IDC_BUTTON_COLLECT_DROP_BOX,227,95,50,14,
+                    BS_FLAT
+    PUSHBUTTON      "Play",IDC_BUTTON_PLAY_GAME,285,162,50,14,BS_FLAT
+    COMBOBOX        IDC_COMBO_GAME_LIST,243,163,34,66,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_HOPPER_IN,287,31,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_DROP_BOX_IN,287,47,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_HOPPER_OUT,287,63,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_MANUAL_PAY,287,79,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_COLLECT_DROP,287,95,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_BET,236,145,39,14,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_WIN,289,144,40,14,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Current Credits: 0",IDC_STATIC_CREDITS,122,164,90,8
+    PUSHBUTTON      "Snapshot",IDC_BUTTON_SNAPSHOT,64,162,50,14,BS_FLAT
+    GROUPBOX        "Credit In / Out",IDC_STATIC,220,7,120,106,BS_FLAT
+    LTEXT           "Amount (Cents)",IDC_STATIC,283,18,49,8
+    GROUPBOX        "Play Game",IDC_STATIC,220,120,120,63,BS_FLAT
+    LTEXT           "Id",IDC_STATIC,229,165,8,8
+    LTEXT           "Bet (Cents)",IDC_STATIC,235,134,36,8
+    LTEXT           "Win (Cents)",IDC_STATIC,289,134,38,8
+END
+
+IDD_CUSTOM DIALOGEX 0, 0, 440, 233
+STYLE WS_CHILD | WS_BORDER
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Custom Datablock",IDC_STATIC,7,7,426,114,BS_FLAT
+    GROUPBOX        "Modify Datablock parameters",IDC_STATIC,7,123,208,103,
+                    BS_FLAT
+    GROUPBOX        "Shortcuts",IDC_STATIC,218,123,215,103,BS_FLAT
+END
+
+IDD_EXCEPTIONS DIALOGEX 0, 0, 372, 191
+STYLE WS_CHILD | WS_BORDER
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Send Queued Exceptions",IDC_CHECK_SEND_PENDING,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,203,154,97,10
+    LTEXT           "Queued Exceptions",IDC_STATIC,203,7,68,8
+    LTEXT           "Exception List",IDC_STATIC,7,7,45,8
+    CONTROL         "List1",IDC_XLISTCTRL_EXCEPTIONS,"SysListView32",
+                    LVS_REPORT | WS_BORDER | WS_TABSTOP,7,18,172,129
+    CONTROL         "List2",IDC_LISTCTRL_PENDING,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,205,18,160,130
+END
+
+IDD_GAMEPLAY DIALOGEX 0, 0, 440, 233
+STYLE WS_CHILD | WS_BORDER
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Money In",IDC_STATIC,7,7,102,97,BS_FLAT
+    PUSHBUTTON      "$100 Note",IDC_ADD_100,14,20,42,14,BS_FLAT
+    PUSHBUTTON      "$50 Note",IDC_ADD_50,14,36,42,14,BS_FLAT
+    PUSHBUTTON      "$20 Note",IDC_ADD_20,14,52,42,14,BS_FLAT
+    PUSHBUTTON      "$10 Note",IDC_ADD_10,14,68,42,14,BS_FLAT
+    PUSHBUTTON      "$5 Note",IDC_ADD_5,59,20,42,14,BS_FLAT
+    PUSHBUTTON      "Ticket",IDC_BUTTON6,14,84,42,14,BS_FLAT
+    PUSHBUTTON      "$1 Hopper",IDC_ADD_1_HOP,59,36,42,14,BS_FLAT
+    PUSHBUTTON      "$1 CashBox",IDC_ADD_1_CB,59,52,42,14,BS_FLAT
+    GROUPBOX        "Money Out",IDC_STATIC,115,7,55,97,BS_FLAT
+    PUSHBUTTON      "Hopper",IDC_HOPPER_OUT,122,21,42,14,BS_FLAT
+    PUSHBUTTON      "Cancel Cr",IDC_CANCEL_CR,122,51,42,14,BS_FLAT
+    PUSHBUTTON      "Confirm",IDC_CONFIRM,122,68,42,14,BS_FLAT | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    GROUPBOX        "Play Game",IDC_STATIC,177,7,250,97,BS_FLAT
+    EDITTEXT        IDC_BET,204,26,30,12,ES_NUMBER | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "Bet",IDC_STATIC,187,29,12,8
+    LTEXT           "Win",IDC_STATIC,187,42,14,8
+    EDITTEXT        IDC_WIN,204,41,30,12,ES_NUMBER | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Play",IDC_PLAY,188,85,42,14,BS_FLAT
+    EDITTEXT        IDC_DURATION,217,58,20,12,ES_NUMBER | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "Duration",IDC_STATIC,187,59,28,8
+    GROUPBOX        "SAP Wins",IDC_STATIC,243,15,48,65,BS_FLAT
+    CONTROL         "Lev 1",IDC_SAP_1,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,248,28,34,10
+    CONTROL         "Lev 2",IDC_SAP_2,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,248,39,34,10
+    CONTROL         "Lev 3",IDC_SAP_3,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,248,50,34,10
+    CONTROL         "Lev 4",IDC_SAP_4,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,248,61,34,10
+    GROUPBOX        "Auto Play",IDC_STATIC,351,14,69,66,BS_FLAT
+    LTEXT           "Min Bet",IDC_STATIC,359,29,25,8
+    LTEXT           "Max Bet",IDC_STATIC,359,40,27,8
+    EDITTEXT        IDC_MIN_BET,387,26,27,12,ES_NUMBER | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_MAX_BET,387,40,27,12,ES_NUMBER | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Start",IDC_START,360,54,42,14,BS_FLAT
+    LTEXT           "",IDC_STATUS_1,305,82,115,8
+    GROUPBOX        "LP Wins",IDC_STATIC,297,15,48,65,BS_FLAT
+    CONTROL         "Lev 1",IDC_LP_1,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,302,28,34,10
+    CONTROL         "Lev 2",IDC_LP_2,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,302,39,34,10
+    CONTROL         "Lev 3",IDC_LP_3,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,302,50,34,10
+    CONTROL         "Lev 4",IDC_LP_4,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,302,61,34,10
+    PUSHBUTTON      "",IDC_PROG_RESET,237,85,56,14,BS_FLAT | NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "",IDC_STATUS_2,305,92,116,8
+    LTEXT           "",IDC_STATUS_3,7,113,165,8
+    GROUPBOX        "Lockup Conditions",IDC_STATIC,7,127,206,99,BS_FLAT
+    CONTROL         "Main Door",IDC_DOOR_MAIN,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,13,140,49,10
+    CONTROL         "Security Door",IDC_DOOR_SECURITY,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,13,151,59,10
+    CONTROL         "Self Audit Error",IDC_ERROR_SELF_AUDIT,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,13,162,63,10
+    CONTROL         "Memory Error",IDC_ERROR_MEMORY,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,13,173,57,10
+    CONTROL         "Audit Mode",IDC_AUDIT_MODE,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,98,140,52,10
+    CONTROL         "SEF Play Suspended",IDC_SEF,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,98,151,83,10
+    CONTROL         "Power Down",IDC_POWER_DOWN,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,98,162,57,10
+    PUSHBUTTON      "Cancel",IDC_CANCEL,122,85,42,14,BS_FLAT | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    CONTROL         "Display Error",IDC_DISPLAY_ERROR,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,98,173,55,10
+END
+
+IDD_TRANSACTIONS DIALOGEX 0, 0, 371, 191
+STYLE WS_CHILD | WS_BORDER
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_LISTCTRL_TRANS_REQUEST,"SysListView32",
+                    LVS_REPORT | WS_BORDER | WS_TABSTOP,14,23,152,111
+    CONTROL         "List1",IDC_LISTCTRL_TRANS_REPLY,"SysListView32",
+                    LVS_REPORT | WS_BORDER | WS_TABSTOP,198,23,157,111
+    PUSHBUTTON      "Send Request",IDC_BUTTON_SEND,14,144,50,14,BS_FLAT
+    GROUPBOX        "Transaction Request",IDC_STATIC,6,6,176,177,BS_FLAT
+    GROUPBOX        "Transaction Reply",IDC_STATIC,181,6,183,177,BS_FLAT
+    PUSHBUTTON      "Send - All IDs",IDC_BTN_SEND_ALL_IDS,14,162,50,14,
+                    BS_FLAT
+END
+
+IDD_COMMS_ERRORS DIALOGEX 0, 0, 372, 191
+STYLE WS_CHILD | WS_BORDER
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Packet Timing Errors",IDC_STATIC,7,7,163,119,BS_FLAT
+    EDITTEXT        IDC_EDIT_POLL_RESPONSE_TIME,123,22,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Poll Response Time (ms)",IDC_STATIC,15,23,78,8
+    EDITTEXT        IDC_EDIT_INTER_CHAR_TIME,123,88,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Time Between breaks (ms)",IDC_STATIC,15,91,84,8
+    EDITTEXT        IDC_EDIT_DATA_READ_RESPONSE_TIME,123,39,40,14,
+                    ES_AUTOHSCROLL | ES_NUMBER | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "Data Read Response Time (s)",IDC_STATIC,15,40,96,8
+    EDITTEXT        IDC_EDIT_RTS_DISABLE_TIME,123,56,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "RTS Disable Time (ms)",IDC_STATIC,15,57,73,8
+    CONTROL         "Dont't Enable RTS",IDC_CHECK_DONT_ENABLE_RTS,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,15,110,75,10
+    CONTROL         "Keep RTS Enabled",IDC_CHECK_KEEP_RTP_ENABLED,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,93,110,77,10
+    CONTROL         "Header Byte",IDC_CHECK_CORRUPT_HEADER,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,180,17,55,10
+    CONTROL         "Trailer Byte",IDC_CHECK_CORRUPT_TRAILER,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,180,101,51,10
+    CONTROL         "CRC",IDC_CHECK_CORRUPT_CRC,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,180,89,31,10
+    CONTROL         "Validation Code",IDC_CHECK_CORRUPT_VALIDATION_CODE,
+                    "Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,180,77,
+                    65,10
+    CONTROL         "Terminal ID",IDC_CHECK_CORRUPT_TERMINAL_ID,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,180,29,52,10
+    GROUPBOX        "Packet Data Errors",IDC_STATIC,174,7,91,119,BS_FLAT
+    CONTROL         "Command",IDC_CHECK_CORRUPT_COMMAND,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,180,41,47,10
+    CONTROL         "Data Segment",IDC_CHECK_CORRUPT_DATA,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,180,53,61,10
+    GROUPBOX        "Apply To",IDC_STATIC,215,130,150,54,BS_FLAT
+    EDITTEXT        IDC_EDIT_NUM_BYTES,274,79,25,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Num Bytes",IDC_STATIC,273,68,35,8
+    GROUPBOX        "Packet Size Errors",IDC_STATIC,271,7,94,119,BS_FLAT
+    COMBOBOX        IDC_COMBO_NUMBER_OF_BREAKS,123,73,40,67,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Number of Breaks in Packet",IDC_STATIC,15,74,90,8
+    CONTROL         "Validation Date Time",
+                    IDC_CHECK_CORRUPT_VALIDATION_DATETIME,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,180,65,81,10
+    COMBOBOX        IDC_COMBO_APPLY_PKT_TYPE,222,147,64,89,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_DATA_SIZE_ERRORS,274,30,68,74,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_FILL_TYPE,274,46,48,57,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Next read reply",IDC_CHECK_NEXT_READ_RESPONSE,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,293,146,63,10
+    CONTROL         "Next Ack/Nack",IDC_CHECK_NEXT_ACK_NACK,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,293,158,66,10
+    PUSHBUTTON      "Set Errors",IDC_BUTTON_SET_ERRORS,222,163,50,14,BS_FLAT
+    GROUPBOX        "Enable",IDC_STATIC_ENABLE,134,130,76,54,BS_FLAT
+    CONTROL         "Timing Errors",IDC_CHECK_ENABLE_TIMING_ER,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,140,143,57,10
+    CONTROL         "Data Errors",IDC_CHECK_ENABLE_DATA_ER,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,140,155,51,10
+    CONTROL         "SizeErrors",IDC_CHECK_ENABLE_SIZE_ER,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,140,167,47,10
+    CONTROL         "N Bits",IDC_CHECK_N_BITS,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,180,112,35,10
+END
+
+IDD_DATETIME_MEMSIG DIALOGEX 0, 0, 371, 191
+STYLE WS_CHILD | WS_BORDER
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_XLISTCTRL_DATETIME_MEMSIG_PKT,"SysListView32",
+                    LVS_REPORT | WS_BORDER | WS_TABSTOP,7,7,194,98
+    CONTROL         "Use Current Date and Time",IDC_CHK_USE_CURRENT_DATETIME,
+                    "Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,7,111,
+                    102,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 624
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 439
+    END
+
+    IDD_SDB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 433
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 226
+    END
+
+    IDD_EVENTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 365
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_CONTROL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 365
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_CONFIGURATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 365
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_COMMSOPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 433
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 226
+    END
+
+    IDD_PROGRAMOPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 400
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 212
+    END
+
+    IDD_MONITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 364
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_CUSTOM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 433
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 226
+    END
+
+    IDD_EXCEPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 365
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_GAMEPLAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 433
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 226
+    END
+
+    IDD_TRANSACTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 364
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 183
+        HORZGUIDE, 23
+    END
+
+    IDD_COMMS_ERRORS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 365
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_DATETIME_MEMSIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 364
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MAIN DLGINIT
+BEGIN
+    IDC_MSCOMMCTRL, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0002, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    IDC_MSCOMM2, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    0
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\VLCSim.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\VLCSim.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOGO                BITMAP  DISCARDABLE     "res\\logo3.BMP"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\bitmap2.bmp"
+#endif    // English (Australia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\VLCSim.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

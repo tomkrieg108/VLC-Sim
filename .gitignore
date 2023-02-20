@@ -1,0 +1,5 @@
+*.txt
+*save*
+xseries*
+/Debug
+/Release
